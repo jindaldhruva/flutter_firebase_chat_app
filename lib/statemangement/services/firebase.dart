@@ -36,6 +36,9 @@ class FirebaseService<T extends BaseModel> extends GetxService {
       case 'wrong-password':
         message = 'Invalid User credentials.';
         break;
+      case 'weak-password':
+        message = 'The password is too weak';
+        break;
       case 'network-request-failed':
         message = 'Please check your internet connection';
         break;
